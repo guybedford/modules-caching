@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "test-cached": "run-p serve-cached launch",
+    "test-cached-nocompilation": "run-p serve-cached launch-nocompilation",
+    "test-uncached": "run-p serve-uncached launch",
+    "serve-uncached": "node static-server.js",
+    "serve-cached": "node static-server.js cached",
+    "launch": "node launch.js",
+    "launch-nocompilation": "node launch.js nocompilation"
+  },
+  "type": "module",
+  "dependencies": {
+    "mime-types": "^2.1.32",
+    "npm-run-all": "^4.1.5",
+    "open": "^8.2.1"
+  }
+}
